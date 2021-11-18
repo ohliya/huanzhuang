@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>换装</title>
+		<style type="text/css">
+		
+		html,body{
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				z-index: -10;
+				position: relative;
+			}
+		#huanzhuang{
+			/*position: relative;*/
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			min-width: 500px;
+			z-index: -10;
+			/*zoom: 1;*/
+				
+			background-image: url("img/huanzhuang/背景.JPG");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center 0;
+		}
+		
+		#shang{
+			position: absolute;
+			z-index:1;
+			margin: 1560px 0px;
+		}
+		#xia{
+			position: absolute;
+			margin: 1555px 110px;
+		}
+		#jinru{
+			position: absolute;
+			margin:2000px 260px;
+		}
+		#nv{
+			position: absolute;
+			z-index: -1;
+			margin: 220px 320px;
+		}
+		#xbnv{
+			position: absolute;
+			margin: 800px 0px;
+		}
+		#nvy1{
+			position: absolute;
+			/*visibility: hidden;*/
+			display: none;
+			margin: 1630px 45px;
+		}
+		#nvy2{
+			position: absolute;
+			/*visibility: hidden;*/
+			display: none;
+			margin: 1630px 420px;
+		}
+		#nvy3{
+			position: absolute;
+			/*visibility: hidden;*/
+			display: none;
+			margin: 1640px 800px;
+		}
+		#nvk1{
+			position: absolute;
+			/*visibility: hidden;*/
+			display: none;
+			margin: 1615px 100px;
+		}
+		#nvk2{
+			position: absolute;
+			/*visibility: hidden;*/
+			display: none;
+			margin: 1630px 430px;
+		}
+		#nvk3{
+			position: absolute;
+			/*visibility: hidden;*/
+			display: none;
+			margin: 1640px 820px;
+		}
+		
+		#xbnan{
+			position: absolute;
+			margin: 940px 0px;
+		}
+		
+		
+		</style>
+		
+        <script type="text/javascript">
+		var nvy = document.getElementsByClassName ("nvy");
+		var nvk = document.getElementsByClassName ("nvk");
+         function shang(){
+			for(var i = 0;i<nvk.length;i++){
+//        		nvy[i].style.visibility = "visible";
+//        		nvk[i].style.visibility = "hidden";
+				nvy[i].style.display="block";
+				nvk[i].style.display="none";
+//        		var a = document.getElementById ("nvy1");
+//        		a.style.visibility = "visible";
+//        		console.log(a.style.visibility);
+           }
+		}
+         function xia(){
+         	
+			for(var i = 0;i<nvk.length;i++){
+//        		nvk[i].style.visibility = "visible";
+//        		nvy[i].style.visibility = "hidden";
+				nvk[i].style.display="block";
+				nvy[i].style.display="none";
+           }
+         }
+
+    </script>
+	</head>
+	<body>
+		<div id="huanzhuang">
+			<div id="shang" >
+				<img src="img/huanzhuang/衣选上身.png" onclick="shang()"/>	
+			</div>
+			<div id="xia" >
+				<img src="img/huanzhuang/衣选下身.png" onclick="xia()"/>	
+			</div>
+			
+			<div id="nv" >
+				<img src="img/huanzhuang/女生.png" onclick="nv()"/>	
+			</div>
+			<div >
+				<div id="nvy1" class="nvy">
+					<img src="img/huanzhuang/女衣1.png" />
+				</div>
+				<div id="nvy2" class="nvy">
+					<img src="img/huanzhuang/女衣2.png" />
+				</div>
+				<div id="nvy3" class="nvy">
+					<img src="img/huanzhuang/女衣3.png" />
+				</div>
+				
+			</div>
+			<div class="nvk">
+				<div id="nvk1" class="nvk">
+					<img src="img/huanzhuang/女裤1.png" />
+				</div>
+				<div id="nvk2" class="nvk">
+					<img src="img/huanzhuang/女裤2.png" />
+				</div>
+				<div id="nvk3" class="nvk">
+					<img src="img/huanzhuang/女裤3.png" />
+				</div>
+			</div>
+			<div id="xbnv">
+				<img src="img/huanzhuang/性别选女.png" />
+			</div>
+			<div id="xbnan">
+				<img  src="img/huanzhuang/性别选男.png"/>
+			</div>
+			<div id="jinru">
+				<img  src="img/huanzhuang/进入.png"/>
+			</div>
+			
+			
+			
+		</div>
+		
+		
+		
+
+	</body>
+</html>
